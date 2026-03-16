@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kožený Hrdla | Oficiální web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, .retro-font { font-family: 'Special+Elite', cursive; }
+        .leather-bg { background-color: #3d2b1f; background-image: url('https://www.transparenttextures.com/patterns/leather.png'); }
+        .accent-color { color: #d4a373; }
+        .btn-primary { background-color: #d4a373; transition: 0.3s; }
+        .btn-primary:hover { background-color: #bc8a5f; }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-900">
+
+    <nav class="leather-bg text-white p-4 sticky top-0 z-50 shadow-xl">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl tracking-widest uppercase">Kožený Hrdla</h1>
+            <div class="space-x-6 hidden md:block">
+                <a href="#home" class="hover:text-amber-200">Domů</a>
+                <a href="#koncerty" class="hover:text-amber-200">Koncerty</a>
+                <a href="#historie" class="hover:text-amber-200">O nás</a>
+                <a href="#kontakt" class="hover:text-amber-200">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative h-screen flex items-center justify-center text-white text-center">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center"></div>
+        <div class="relative z-20 px-4">
+            <h2 class="text-5xl md:text-7xl mb-4 uppercase drop-shadow-lg">Folk & Country od roku 1986</h2>
+            <p class="text-xl mb-8 italic">Písně, které voní dálkou a táborákem.</p>
+            <a href="#koncerty" class="btn-primary px-8 py-3 rounded-sm text-stone-900 font-bold uppercase tracking-wider">Kde nás slyšet</a>
+        </div>
+    </header>
+
+    <section id="koncerty" class="py-20 container mx-auto px-4">
+        <h2 class="text-4xl text-center mb-12 accent-color">Nadcházející koncerty</h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <div class="bg-white p-6 rounded shadow-md border-l-4 border-[#d4a373] flex justify-between items-center">
+                <div>
+                    <span class="text-sm font-bold text-stone-500 uppercase">25. Červen 2026</span>
+                    <h3 class="text-xl font-bold">Country Festival "Pod Širákem"</h3>
+                    <p class="text-stone-600">Letní kino, Vysočina</p>
+                </div>
+                <a href="#" class="text-sm underline hover:text-[#d4a373]">Mapa</a>
+            </div>
+            <div class="bg-white p-6 rounded shadow-md border-l-4 border-[#d4a373] flex justify-between items-center opacity-75">
+                <div>
+                    <span class="text-sm font-bold text-stone-500 uppercase">12. Červenec 2026</span>
+                    <h3 class="text-xl font-bold">U Zlatého koně (Akusticky)</h3>
+                    <p class="text-stone-600">Praha, Malá Strana</p>
+                </div>
+                <a href="#" class="text-sm underline hover:text-[#d4a373]">Mapa</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="historie" class="leather-bg text-stone-200 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=1000" alt="Kapela" class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl mb-6 accent-color">Naše cesta</h2>
+                <p class="mb-4 leading-relaxed text-lg text-stone-300">
+                    Kapela Kožený Hrdla vznikla v dobách, kdy se u ohňů zpívalo o svobodě. Od té doby jsme odehráli stovky koncertů a naše sestava se sice měnila, ale srdce zůstalo stejné.
+                </p>
+                <p class="leading-relaxed text-stone-300">
+                    Hrajeme folk, tramp a country s důrazem na české texty a akustický zvuk. Naše hudba je pro všechny, kteří v ní hledají klid a upřímnost.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-20 bg-stone-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl mb-8 accent-color uppercase">Napište nám</h2>
+            <p class="mb-12">Chcete nás na svém festivalu nebo oslavě? Ozvěte se!</p>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded shadow-xl">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Vaše jméno" class="w-full p-3 border border-stone-300 rounded focus:outline-none focus:border-[#d4a373]">
+                    <input type="email" placeholder="E-mail" class="w-full p-3 border border-stone-300 rounded focus:outline-none focus:border-[#d4a373]">
+                    <textarea placeholder="Vaše zpráva" rows="4" class="w-full p-3 border border-stone-300 rounded focus:outline-none focus:border-[#d4a373]"></textarea>
+                    <button type="submit" class="btn-primary w-full py-3 text-stone-900 font-bold uppercase">Odeslat poptávku</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-stone-500 py-8 text-center text-sm uppercase tracking-widest">
+        &copy; 2026 Kožený Hrdla | Vytvořeno s úctou k tradici
+    </footer>
+
+</body>
+</html>
